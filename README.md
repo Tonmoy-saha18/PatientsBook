@@ -7,3 +7,5 @@
 - **Lastly if you want to ```edit``` some details of a patient just ```click``` on the ```edit button``` it will give you a new Interface for editing that particular patient's details.**
 
 ![image](https://user-images.githubusercontent.com/72729285/217040758-75d32b31-4a8b-43c4-abe4-c571a249300a.png "Edit details page of Patients")
+![image](https://user-images.githubusercontent.com/72729285/217042058-97e88cb8-25fa-4d0d-b484-2036667ff326.png "Patients Details")
+
