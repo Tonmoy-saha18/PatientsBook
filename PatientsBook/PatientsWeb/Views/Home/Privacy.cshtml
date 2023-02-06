@@ -1,0 +1,34 @@
+﻿@model Customer
+@{
+    ViewData["Title"] = "Patient Details";
+}
+<h3 class="p-2">@ViewData["Title"]</h3>
+
+<div class="container">
+    <hr />
+    <div class="row patient-container">
+        <div class="col-md-4 left-col">
+            <img src="@Convert.ToBase64String(Model.CustomerPhoto)" alt="@Model.CustomerName 's Photo" />
+        </div>
+        <div class="col-md-8 p-3">
+            <h4>@Model.CustomerName</h4>
+            <p>Father's Name: @Model.FatherName</p>
+            <p>Mother's Name: @Model.MotherName</p>
+            @if(Model.MaritialStatus == 0)
+            {
+                <p>Marital Status: Single</p>
+            }
+            else
+            {
+                <p>Marital Status: Married</p>
+            }
+            <p>Address: @Model.CustomerAddress</p>
+        </div>
+    </div>
+    <br />
+    <a asp-action="Index" asp-controller="Home" class="btn btn-dark"><b><<</b>Back</a>
+</div>
+
+
+
+

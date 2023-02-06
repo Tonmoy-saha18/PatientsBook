@@ -1,0 +1,44 @@
+﻿@model Customer
+@{
+    ViewData["Title"] = "Edit Patient Details";
+}
+
+<h2>Edit Customer</h2>
+<hr />
+
+<form method="post" asp-action="Update" asp-controller="Home" class="form-container2">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="CustomerName" class="control-label label"></label>
+        <input asp-for="CustomerName" class="form-control" />
+        <span asp-validation-for="CustomerName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FatherName" class="control-label label"></label>
+        <input asp-for="FatherName" class="form-control" />
+        <span asp-validation-for="FatherName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MotherName" class="control-label label"></label>
+        <input asp-for="MotherName" class="form-control" />
+        <span asp-validation-for="MotherName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaritialStatus" class="control-label label"></label>
+        <input asp-for="MaritialStatus" class="form-control" />
+        <span asp-validation-for="MaritialStatus" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="CustomerPhoto"/>
+    <input type="hidden" asp-for="CountryId" />
+    <div class="form-group">
+        <label asp-for="CustomerAddress" class="control-label label"></label>
+        <input asp-for="CustomerAddress" class="form-control" />
+        <span asp-validation-for="CustomerAddress" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <br />
+        <input type="submit" value="Update" class="btn btn-success p-2 mx-2" />
+        <a asp-action="Index" asp-controller="Home" class="btn btn-dark"><b><<</b>Back</a>
+    </div>
+</form>
+
